@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: streamster;
+    src: url(assets/fonts/Streamster.ttf);
+}
+
+@font-face {
+    font-family: verminVibes;
+    src: url(assets/fonts/VerminVibes.ttf);
+}
+
+body {
+    font-family: verminVibes;
+}
+
+.toolbar {
+    background-color: aqua;
+}

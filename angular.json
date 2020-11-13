@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "nasaphreak-site": {
+    "nasaphreak-source": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nasaphreak-site",
+            "outputPath": "dist/nasaphreak-source",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "nasaphreak-site:build"
+            "browserTarget": "nasaphreak-source:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "nasaphreak-site:build:production"
+              "browserTarget": "nasaphreak-source:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nasaphreak-site:build"
+            "browserTarget": "nasaphreak-source:build"
           }
         },
         "test": {
@@ -110,15 +110,23 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "nasaphreak-site:serve"
+            "devServerTarget": "nasaphreak-source:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "nasaphreak-site:serve:production"
+              "devServerTarget": "nasaphreak-source:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "nasaphreak-site"
+    }
+  },
+  "defaultProject": "nasaphreak-source",
+  "cli": {
+    "analytics": "870dbacc-81e6-4f92-aadf-57c5a30e34f9"
+  }
 }
