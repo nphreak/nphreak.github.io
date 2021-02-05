@@ -27,3 +27,9 @@ Talvez usar um fundo estático que vira numa espécie de "perspectiva", como pro
 26/01/2021
 Agora caminhando um pouco mais no projeto, ao invés da animação 3d, optei por iniciar o desenvolvimento com o conteúdo das páginas, apesar de ainda cru e meio tosco, acredito que seguirei esse caminho como visual do site.
 Criei a página inicial, usei o typed.js do mattboldt (https://github.com/mattboldt/typed.js), pra um efeito de digitação, coloquei as mensagens que o Neo recebe em Matrix.
+
+01/02/2021 (Feb 1st)
+
+Comecei a preparar para usar o particles.js do Vicent Garreau (https://github.com/VincentGarreau/particles.js/), mas aparentemente para usar com o React é outra coisa.
+Como meu objetivo de entender como funcionava o React de certa forma foi sanada, optei por reiniciar o projeto do 0, utilizando a tecnologia que me sinto mais confortável, que é o Angular. 
+No final das contas, meu objetivo é fazer um site funcional, para me apresentar e voltar a estudar os tópicos de Hacking. Então decidi voltar pro Angular, fazer o que quero fazer hospedar a parte de Blog e voltar pro TryHackMe.
