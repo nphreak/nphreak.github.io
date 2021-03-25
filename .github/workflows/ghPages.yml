@@ -1,33 +1,38 @@
-# # This is a basic workflow that is manually triggered
+# This is a basic workflow that is manually triggered
 
-# name: Manual workflow
+name: Manual workflow
 
-# # Controls when the action will run. Workflow runs when manually triggered using the UI
-# # or API.
-# on:
-#   push:
-#     # Inputs the workflow accepts.
-#     branches: 
-#     - master
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  push:
+    # Inputs the workflow accepts.
+    branches: 
+    - master
 
-# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# jobs:
-#   # This workflow contains a single job called "greet"
-#   build:
-#     # The type of runner that the job will run on
-#     runs-on: ubuntu-latest
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "greet"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-#     # Steps represent a sequence of tasks that will be executed as part of the job
-#     steps:
-#     # Runs a single command using the runners shell
-#     - name: build
-#       run: ng build --prod
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Runs a single command using the runners shell
+    - name: build
+      run: ng build --prod
       
-#     - name: Angular Deploy gh-pages Actions
-#       # You may pin to the exact commit or the version.
-#       # uses: AhsanAyaz/angular-deploy-gh-pages-actions@26ffbdb76b46ce3d649d046f1f7f45099654cfd7
-#       uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
-#       with:
-#         # Github access token token used to deploy on gh_pages. You can find it on Github.
-#         github_access_token: ${{ secrets.GITHUB_TOKEN }}
-#     # The directory of the angular project, in which all the commands will run
+    - name: GH Pages deploy
+      # You may pin to the exact commit or the version.
+      # uses: Cecilapp/GitHub-Pages-deploy@f26df39a27b93cae2c6aac5e07fdc556e8770247
+      uses: Cecilapp/GitHub-Pages-deploy@3.1.0
+      with:
+        # A verified email.
+        email: phr.pereira1992@gmail.com
+        # Where static files are.
+        build_dir: /dist
+        # Which branch to push files.
+        branch: gh-pages
+        # The custom domain name.
+        cname: nasaphreak.site
