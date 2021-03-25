@@ -1,0 +1,39 @@
+# This is a basic workflow that is manually triggered
+
+name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Person to greet'
+        # Default value if no value is explicitly provided
+        default: 'World'
+        # Input has to be provided for the workflow to run
+        required: true
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "greet"
+  greet:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Runs a single command using the runners shell
+    - name: Send greeting
+      run: echo "Hello ${{ github.event.inputs.name }}"
+      
+    - name: Angular Deploy gh-pages Actions
+      # You may pin to the exact commit or the version.
+      # uses: AhsanAyaz/angular-deploy-gh-pages-actions@26ffbdb76b46ce3d649d046f1f7f45099654cfd7
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
+      with:
+        # Github access token token used to deploy on gh_pages. You can find it on Github.
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+    # The directory of the angular project, in which all the commands will run
