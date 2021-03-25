@@ -37,3 +37,13 @@ html {
     color: rgb(101, 172, 104);
 }
 
+
+
+@media (max-width:763) {
+    .main-menu {
+        z-index: 100;
+        position: absolute;
+    }
+}
+
+@media (max-width:1140px) {}

@@ -33,3 +33,7 @@ Criei a página inicial, usei o typed.js do mattboldt (https://github.com/mattbo
 Comecei a preparar para usar o particles.js do Vicent Garreau (https://github.com/VincentGarreau/particles.js/), mas aparentemente para usar com o React é outra coisa.
 Como meu objetivo de entender como funcionava o React de certa forma foi sanada, optei por reiniciar o projeto do 0, utilizando a tecnologia que me sinto mais confortável, que é o Angular. 
 No final das contas, meu objetivo é fazer um site funcional, para me apresentar e voltar a estudar os tópicos de Hacking. Então decidi voltar pro Angular, fazer o que quero fazer hospedar a parte de Blog e voltar pro TryHackMe.
+
+25/03/2021
+
+Retomando o site, agora com o particles setado, fiz ajustes no css do card adicionando responsividade no site. Termino o conteúdo inicialmente. 

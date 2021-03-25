@@ -23,9 +23,9 @@
     height: 300px;
 }
 
-.card{
+.card {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 3px  rgb(18, 145, 23) solid;
+    border: 3px rgb(18, 145, 23) solid;
     padding: 20px 30px;
     border-radius: 10px;
     width: 50vw;
@@ -59,4 +59,26 @@ html {
     background-color: var(--thumbBG);
     border-radius: 6px;
     border: 3px solid var(--scrollbarBG);
+}
+
+.typed-container {
+    height: 8vh;
+}
+
+@media (max-width:760px) {
+    
+}
+
+@media (max-width:1140px) {
+    .card {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 3px rgb(18, 145, 23) solid;
+        padding: 10px 10px;
+        border-radius: 10px;
+        width: 80vw;
+        height: 90vh;
+        margin-right: auto;
+        margin-left: auto;
+        overflow-y: scroll;
+    }
 }

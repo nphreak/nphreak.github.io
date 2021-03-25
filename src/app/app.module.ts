@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { PostComponent } from './components/blog/post/post.component';
 import { ListaComponent } from './components/blog/lista/lista.component';
+import { RedesComponent } from './components/redes/redes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ListaComponent } from './components/blog/lista/lista.component';
     HomeComponent,
     SobreComponent,
     PostComponent,
-    ListaComponent
+    ListaComponent,
+    RedesComponent
   ],
   imports: [
     BrowserModule,

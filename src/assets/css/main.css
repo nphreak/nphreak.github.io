@@ -7,6 +7,9 @@
 .modeseven a, .modeseven p, .modeseven h1, .modeseven h2, .modeseven span{
   font-family: 'modesevenregular','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.robotomono a, .robotomono p, .robotomono h1, .robotomono h2, .robotomono span{
+  font-family: 'roboto_monoregular', monospace;
+}
 
 .font-menu a{
   font-size: 25px;
@@ -61,8 +64,8 @@ app-menu{
 }
 
 #particles-js{
-  height: 100%;
-  width: 100%;
+  height: 97vh;
+  width: 100vw;
   position: absolute;
   top: 0;
   left:0;
@@ -100,4 +103,9 @@ app-menu{
 }
 #typed-part{
   height: 300px;
+}
+
+
+@media (max-width: 760px) {
+  
 }
