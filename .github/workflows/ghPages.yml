@@ -1,5 +1,5 @@
 name: Build and Deploy
-on: [push]
+on: [merge]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -15,3 +15,8 @@ jobs:
       - name: Deploy 🚀
         run: |
           cp ./dist/nasaphreak/* ./docs/
+          git remote rm origin
+          git remote add gh-pages https://github.com/nasaphreak/nasaphreak.github.io.git
+
+
+
