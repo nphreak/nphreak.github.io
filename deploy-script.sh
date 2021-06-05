@@ -1,10 +1,7 @@
-ng build
-mkdir docs
-cp ./dist/nasaphreak/* ./docs/
+git add remote pages https://github.com/nasaphreak/nasaphreak.github.io.git
+git checkout deploy
 
-# limpar branch
 
-# criar branch
 
-# subir pasta docs + cname
-
+npm install
+npm run build
