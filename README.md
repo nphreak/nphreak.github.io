@@ -37,3 +37,8 @@ No final das contas, meu objetivo é fazer um site funcional, para me apresentar
 25/03/2021
 
 Retomando o site, agora com o particles setado, fiz ajustes no css do card adicionando responsividade no site. Termino o conteúdo inicialmente. 
+
+
+04/06/2021
+
+git remote add pages https://github.com/nasaphreak/nasaphreak.github.io.git
