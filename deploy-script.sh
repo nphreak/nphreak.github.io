@@ -13,3 +13,9 @@ git read-tree --prefix=docs -u pages/master
 
 git branch gh-pages
 git filter-branch -f --subdirectory-filter ./docs/ gh-pages
+
+
+ 
+git fetch pages master 
+git subtree pull --prefix docs pages master --squash
+
