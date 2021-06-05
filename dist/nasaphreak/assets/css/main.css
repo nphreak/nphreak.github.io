@@ -1,0 +1,111 @@
+.streamster{
+  font-family: 'streamster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.spartakus a, .spartakus p, .spartakus h1, .spartakus h2, .spartakus span{
+  font-family: 'spartakusregular','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.modeseven a, .modeseven p, .modeseven h1, .modeseven h2, .modeseven span{
+  font-family: 'modesevenregular','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.robotomono a, .robotomono p, .robotomono h1, .robotomono h2, .robotomono span{
+  font-family: 'roboto_monoregular', monospace;
+}
+
+.font-menu a{
+  font-size: 25px;
+}
+
+.main-menu{
+  background-color: rgb(0, 0, 0);
+  color:rgb(18, 145, 23);
+  width: 100vw;
+  top:0;
+  left: 0;
+  position: fixed;
+  display: flexbox;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color:rgb(18, 145, 23);
+
+}
+#main-menu{
+  background-color: rgb(0, 0, 0);
+}
+
+#toggle-btn span{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2818, 145, 23, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+#toggle-btn {
+  border: 1px solid rgb(18, 145, 23);
+}
+
+#main-menu>.nav-link{
+  color:rgb(18, 145, 23);  
+}
+
+body, html {
+  height: 100vh !important;
+  background-color: rgb(0, 0, 0)!important;
+  background-attachment: fixed!important;
+  background-size: auto!important;
+}
+body{
+  padding-top: 60px;
+}
+app-menu{
+  position: relative;
+  z-index: 10;
+}
+
+#conteudo{
+  position: relative;
+  z-index: 1;
+}
+
+#particles-js{
+  height: 97vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 0;
+}
+
+.card-home h1, .card-home p, .card-home span{
+  /* color:#e2e2e2; */
+  color:rgb(18, 145, 23);
+}
+
+.card-home span, .card-home p {
+  font-size: 18px;
+}
+
+.imagem-card-1{
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  float: right;
+  margin: 10px
+}
+#foto-home-1{
+  background-image: url('../images/eu-home.jpeg');
+
+}
+#foto-sobre-1{
+  background-image: url('../images/eu2.jpg');
+  background-position: center;
+
+}
+
+.paragrafo-home{
+  margin-top: 50px;
+}
+#typed-part{
+  height: 300px;
+}
+
+
+@media (max-width: 760px) {
+  
+}
